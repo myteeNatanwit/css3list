@@ -1,0 +1,220 @@
+<style>
+/*Basic reset*/
+* {margin: 0; padding: 0;}
+
+body {
+	background: #4EB889;
+	font-family: Nunito, arial, verdana;
+	background: url(images/bg1.jpg) no-repeat;	
+	background-size:cover;
+	background-width:100%;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-user-select: none;
+-webkit-text-size-adjust: none;
+-webkit-touch-callout: none;	
+overflow:hidden;
+}
+#mlist {
+    position: fixed;
+    float:left;
+    left:18%;
+    bottom:60px;
+    width:82%;
+    color: white;
+	
+}
+/*heading styles*/
+#mlist h3 {
+	font-size: 18px;
+	padding: 10px;
+	line-height: 34px;
+	padding: 10px;
+	cursor: pointer;
+	/*fallback for browsers not supporting gradients*/
+	background: #003040; 
+	background: linear-gradient(#003040, #002535);
+}
+/*heading hover effect*/
+#mlist h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#mlist h3 span {
+	font-size: 16px;
+	margin-right: 10px;
+}
+/*list items*/
+#mlist li {
+	list-style-type: none;
+}
+
+/* on mouse down*/
+#mlist li:active {
+	background: rgba(0,200,0,.6);
+}
+
+/*links*/
+
+#mlist ul li a {
+    margin:5px 0 5px 0;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 27px;
+	display: block;
+	padding: 5px 15px;
+	height:34px;
+	/*transition for smooth hover animation*/
+	transition: all 0.15s;
+    background:rgba(0,0,0,.6) url(images/right.png) no-repeat right;	
+
+}
+/*hover effect on links*/
+#mlist ul li a:hover {
+ background-color:rgba(15,28,66,.6);
+ border-left: 5px solid brown;
+}
+
+#mlist li.active ul {
+	display: block;
+}
+img{
+margin-right:5px;
+}
+
+#heading{
+display:block;
+background:rgba(0,200,0,.6) url(images/air.png) no-repeat left;
+height:120px; 
+width:100%;
+}
+
+#leftpanel{
+position:fixed; 
+left:0; 
+background: url(images/home80.png) no-repeat left, url(images/footwhite.png) no-repeat bottom left;  
+width:20%; 
+height:80%;
+top:40px;
+}
+
+input { 
+  display: none;
+}
+
+.tab-link {
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: block;
+  float: left;
+  font-size:1.2em;
+  padding: 20px 0 0 0;
+  width:49%;
+  height:40px;
+  text-align: center;
+  border: 1px solid #bbb;
+  border-left: 0;
+  border-bottom: 0;
+  background: #666;
+  
+}
+
+.tab-link:hover {
+  background: #999;
+}
+
+.tab-link:nth-of-type(1) {
+  //border-left: 6px solid #bbb;
+}
+
+.tab-link:active{
+background: rgba(0,200,0,.6);
+}
+
+
+.tab {
+  clear: both;
+  padding: 25px;
+  display: none;
+  height: 80%;
+  
+}
+
+.tab-area {
+    width: 100%;
+    margin: 0 0 5%;
+    float: left;
+    height: 99%;
+  }
+
+.tabs-checked input:nth-of-type(2):not(:checked) ~ input:nth-of-type(3):not(:checked) ~ .tab:nth-of-type(1),
+.tabs-checked input:nth-of-type(2):checked ~ .tab:nth-of-type(2),
+.tabs-checked input:nth-of-type(3):checked ~ .tab:nth-of-type(3) 
+{
+  display: block;
+  
+}
+/* selected */
+#tabC:target ~ a:nth-of-type(3),
+#tabB:target ~ a:nth-of-type(2),
+#tabC:not(:target) ~ #tabB:not(:target) ~ a:nth-of-type(1),
+#tab-C:checked ~ label:nth-of-type(3),
+#tab-B:checked ~ label:nth-of-type(2),
+#tab-B:not(:checked) ~ #tab-C:not(:checked) ~ label:nth-of-type(1) {
+  background: rgba(0,0,0,0);
+}
+
+</style>
+
+<body>
+
+<section class="tab-area tabs-checked">
+
+		<input checked type="radio" name="tab" id="tab-A" />
+		<input type="radio" name="tab" id="tab-B" />
+		<input type="radio" name="tab" id="tab-C" />
+
+		<label class="tab-link" for="tab-A">Terminal 1</label>
+		<label class="tab-link" for="tab-B">Terminal 2</label>
+		
+
+		<article class="tab">
+<div id="leftpanel" ></div>
+<div id="mlist">
+			<ul>
+			<li>
+			<div id="heading"> 
+			<h1 style="color:white; margin-left:70px; padding:10px">Terminal 1</h1>
+			<h4 style="color:blue; margin-left:80px;">Also for Domestic flights</h4></div></li>	
+			<li><a href="#" onclick="" ><img src="images/dining.png"/>Food&Drink</a></li>
+			<li><a href="#" onclick=""><img src="images/rates.png"/>Shopping</a></li>
+			<li><a href="#" onclick=""><img src="images/rooms.png"/>Locks</a></li>
+			<li><a href="#" onclick=""><img src="images/activities.png"/>Relax</a></li>
+			<li></li>
+			</ul>
+		
+</div>
+		</article>
+		<article class="tab">
+<div id="leftpanel" ></div>
+<div id="mlist">
+			<ul>
+			<li>
+			<div id="heading"> 
+			<h1 style="color:white; margin-left:70px; padding:10px">Terminal 2</h1>
+			<li><a href="#" onclick="" ><img src="images/dining.png"/>Food&Drink</a></li>
+			<li><a href="#" onclick=""><img src="images/kub-cart.png"/>Duty Free</a></li>
+			<li><a href="#" onclick=""><img src="images/rooms.png"/>Rooms</a></li>
+			<li><a href="#" onclick=""><img src="images/toilet.png"/>Restroom</a></li>
+			<li></li>
+			</ul>
+</div>
+		</article>
+		
+
+	</section>
+
+</body>
