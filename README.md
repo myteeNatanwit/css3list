@@ -2,7 +2,7 @@ Css3 list
 =========
 
 I got the idea of this app while doing experiment with rbga(red, blue, green and Alpha). Ive been staying with opacity long, long time and had so much trouble to lay several divs on top each other to create rbga effect. Man! Spending few hours reading ab Css3 saving me few days’ work. Phew!
-=========
+
 #Runit
 Try this in a resized to phone screen, you can c it works correctly while on browser screen it looks real bad.
 
