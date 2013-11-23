@@ -1,7 +1,7 @@
 Css3 list
 =========
 
-I got the idea of this app while doing experiment with rbga(red, blue, green and Alpha). Ive been staying with opacity long, long time and had so much trouble to lay several divs on top each other to create rbga effect. Man! Spending few hours reading ab Css3 saving me few days’ work. Phew!
+I got the idea of this app while doing experiment with rgba(red, green, blue and Alpha). Ive been staying with opacity long, long time and had so much trouble to lay several divs on top each other to create rbga effect. Man! Spending few hours reading ab Css3 saving me few days’ work. Phew!
 
 #Runit
 Try this in a resized to phone screen, you can c it works correctly while on browser screen it looks real bad.
@@ -12,7 +12,7 @@ Just have a play with the source code, having fun with the numbers, change them,
 The idea is to use :active, :before, :after, :hover in Css3 for the effect.
 The screen is divided in 3 divs, top, left, and right. The top is the Tab panel, 2 tabs. The left with position:fixed; width:20%. The right div, position: absolute, margin-left:20% so it stays next to the left div. 
 2 background imgs for the left div are the foot path and the home pngs. You can just change them to anything, provided new pngs must be alpha supported.
-The list backgound is rbga(0,0,0,0.6), the a:after with arrow img.
+The list backgound is rgba(0,0,0,0.6), the a:after with arrow img.
 
 The tabs are the radio input, but hidden, active however. They link to the article panel to show the content. Why using article? oh! Experiment. You can change it to div.
 
