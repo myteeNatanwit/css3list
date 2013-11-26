@@ -1,7 +1,7 @@
 Css3 list
 =========
 
-I got the idea of this app while doing experiment with rgba(red, green, blue and Alpha). Ive been staying with opacity long, long time and had so much trouble to lay several divs on top each other to create rbga effect. Man! Spending few hours reading ab Css3 saving me few days’ work. Phew!
+I got the idea of this app while doing experiment with rgba(red, green, blue and Alpha). Ive been staying with opacity long, long time and had so much trouble to lay several divs on top each other to create rbga effect. Man! Spending few hours reading ab Css3 saving me few daysï¿½ work. Phew!
 
 #Runit
 Try this in a resized to phone screen, you can c it works correctly while on browser screen it looks real bad.
@@ -18,9 +18,13 @@ The tabs are the radio input, but hidden, active however. They link to the artic
 
 #Setup
 There is no Javascript, no Jquery in this template. Only Css3. Obviously it does nothing yet. The active parts were cut off as it is an submitted app for airport terminal navigator. You can do anything with the code by following:
+
 1- Delete the copyright div if there is any ;-), or put your name there if u wish.
+
 2- Add the script section with document.ready or $(function () {}); and bind("click", fn.... to the elements, or using ajax by put the link in href# in the list item.
+
 3-dont forget to have a link back to the index.
+
 4-set the link to the "leftpanel" as it should show the terminal map. Get the map in large size with pinch enabled so that user can find "you are here" pot.
 
 #Bugs?
